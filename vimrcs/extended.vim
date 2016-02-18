@@ -36,8 +36,8 @@ if has("gui_running")
     set background=dark
     colorscheme peaksea
 else
-    colorscheme desert
-    let g:colors_name="desert"
+    colorscheme peaksea
+    " let g:colors_name="desert"
 endif
 
 
@@ -47,6 +47,9 @@ endif
 map <leader>e :e! ~/.vim_runtime/my_configs.vim<cr>
 autocmd! bufwritepost vimrc source ~/.vim_runtime/my_configs.vim
 
+map <leader>E :e! ~/.vimrc<cr>
+autocmd! bufwritepost vimrc source ~/.vimrc<cr>
+ 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Turn persistent undo on 
@@ -116,8 +119,6 @@ iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
 " => Omni complete functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
